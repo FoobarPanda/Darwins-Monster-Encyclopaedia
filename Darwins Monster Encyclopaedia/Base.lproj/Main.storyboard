@@ -220,7 +220,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="monsterCell" rowHeight="60" id="JQe-Mf-Mmz">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="monsterCell" rowHeight="60" id="JQe-Mf-Mmz" customClass="MonsterCell">
                                 <rect key="frame" x="0.0" y="56" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JQe-Mf-Mmz" id="mNK-EA-HYt">
@@ -235,7 +235,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B1-s9-GKT">
-                                            <rect key="frame" x="313" y="19" width="50" height="21"/>
+                                            <rect key="frame" x="297" y="19" width="50" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -243,6 +243,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="monsterHealthLabel" destination="2B1-s9-GKT" id="Scv-ex-Xpk"/>
+                                    <outlet property="monsterName" destination="7WC-ix-4fg" id="fPH-bZ-QUs"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="totalCell" textLabel="gqB-w8-Pbc" rowHeight="28" style="IBUITableViewCellStyleDefault" id="YSJ-3F-Gsu">
                                 <rect key="frame" x="0.0" y="116" width="375" height="28"/>
@@ -267,6 +271,9 @@
                             <outlet property="delegate" destination="Dpe-x8-Nbl" id="EbP-MY-um4"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="test" destination="7WC-ix-4fg" id="RmU-4S-TRU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Nn-Hg-YmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

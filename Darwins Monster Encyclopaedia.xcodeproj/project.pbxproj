@@ -15,6 +15,9 @@
 		279CEC2B1E77743300300F27 /* Darwins_Monster_EncyclopaediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279CEC2A1E77743300300F27 /* Darwins_Monster_EncyclopaediaTests.swift */; };
 		279CEC361E77743300300F27 /* Darwins_Monster_EncyclopaediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279CEC351E77743300300F27 /* Darwins_Monster_EncyclopaediaUITests.swift */; };
 		279CEC441E77768300300F27 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279CEC431E77768300300F27 /* Monster.swift */; };
+		ABC45DBE1E83788F00688E29 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DBD1E83788F00688E29 /* SearchTableViewController.swift */; };
+		ABC45DC01E8380C900688E29 /* MonsterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DBF1E8380C900688E29 /* MonsterCell.swift */; };
+		ABC45DC21E83819900688E29 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DC11E83819900688E29 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		279CEC351E77743300300F27 /* Darwins_Monster_EncyclopaediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Darwins_Monster_EncyclopaediaUITests.swift; sourceTree = "<group>"; };
 		279CEC371E77743300300F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279CEC431E77768300300F27 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		ABC45DBD1E83788F00688E29 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		ABC45DBF1E8380C900688E29 /* MonsterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterCell.swift; sourceTree = "<group>"; };
+		ABC45DC11E83819900688E29 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				279CEC151E77743300300F27 /* AppDelegate.swift */,
 				279CEC171E77743300300F27 /* ViewController.swift */,
 				279CEC191E77743300300F27 /* Main.storyboard */,
+				ABC45DC11E83819900688E29 /* SearchViewController.swift */,
+				ABC45DBF1E8380C900688E29 /* MonsterCell.swift */,
+				ABC45DBD1E83788F00688E29 /* SearchTableViewController.swift */,
 				279CEC431E77768300300F27 /* Monster.swift */,
 				279CEC1C1E77743300300F27 /* Assets.xcassets */,
 				279CEC1E1E77743300300F27 /* LaunchScreen.storyboard */,
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC45DC21E83819900688E29 /* SearchViewController.swift in Sources */,
 				279CEC181E77743300300F27 /* ViewController.swift in Sources */,
 				279CEC441E77768300300F27 /* Monster.swift in Sources */,
 				279CEC161E77743300300F27 /* AppDelegate.swift in Sources */,
+				ABC45DC01E8380C900688E29 /* MonsterCell.swift in Sources */,
+				ABC45DBE1E83788F00688E29 /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +519,7 @@
 				279CEC3C1E77743300300F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		279CEC3D1E77743300300F27 /* Build configuration list for PBXNativeTarget "Darwins Monster EncyclopaediaTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +528,7 @@
 				279CEC3F1E77743300300F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		279CEC401E77743300300F27 /* Build configuration list for PBXNativeTarget "Darwins Monster EncyclopaediaUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +537,7 @@
 				279CEC421E77743300300F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
