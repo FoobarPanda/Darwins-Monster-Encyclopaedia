@@ -179,7 +179,7 @@
         <!--Search-->
         <scene sceneID="pL7-vz-PAd">
             <objects>
-                <viewController title="Search" id="9WA-zC-nKI" sceneMemberID="viewController">
+                <viewController title="Search" id="9WA-zC-nKI" customClass="SearchViewController" customModule="Darwins_Monster_Encyclopaedia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Xa-t1-sGQ"/>
                         <viewControllerLayoutGuide type="bottom" id="dKa-vr-xfb"/>
@@ -200,16 +200,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
+                                    <action selector="searchButton:" destination="9WA-zC-nKI" eventType="touchUpInside" id="FD1-eh-Jso"/>
                                     <segue destination="Dpe-x8-Nbl" kind="show" id="QwB-51-kd3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="searchField" destination="Gkn-O4-tfL" id="Z0q-cg-63o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4C-Zz-aEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2669.5999999999999" y="889.20539730134942"/>
+            <point key="canvasLocation" x="2801" y="888"/>
         </scene>
         <!--Search-->
         <scene sceneID="Sgn-ff-rne">
@@ -245,7 +249,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="monsterHealthLabel" destination="2B1-s9-GKT" id="Scv-ex-Xpk"/>
-                                    <outlet property="monsterName" destination="7WC-ix-4fg" id="fPH-bZ-QUs"/>
+                                    <outlet property="monsterNameLabel" destination="7WC-ix-4fg" id="L5b-wU-KgN"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="totalCell" textLabel="gqB-w8-Pbc" rowHeight="28" style="IBUITableViewCellStyleDefault" id="YSJ-3F-Gsu">

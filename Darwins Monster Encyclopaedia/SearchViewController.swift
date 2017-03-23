@@ -10,6 +10,12 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    //Attributes
+    
+    @IBOutlet var searchField: UITextField!
+    @IBAction func searchButton(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
