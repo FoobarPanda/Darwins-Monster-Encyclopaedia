@@ -18,6 +18,12 @@
 		ABC45DBE1E83788F00688E29 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DBD1E83788F00688E29 /* SearchTableViewController.swift */; };
 		ABC45DC01E8380C900688E29 /* MonsterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DBF1E8380C900688E29 /* MonsterCell.swift */; };
 		ABC45DC21E83819900688E29 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DC11E83819900688E29 /* SearchViewController.swift */; };
+		ABC45DC81E838B0300688E29 /* MonstersModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DC61E838B0300688E29 /* MonstersModel.xcdatamodeld */; };
+		ABC45DCD1E838F6000688E29 /* Monster+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DC91E838F6000688E29 /* Monster+CoreDataClass.swift */; };
+		ABC45DCE1E838F6000688E29 /* Monster+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DCA1E838F6000688E29 /* Monster+CoreDataProperties.swift */; };
+		ABC45DCF1E838F6000688E29 /* MonsterData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DCB1E838F6000688E29 /* MonsterData+CoreDataClass.swift */; };
+		ABC45DD01E838F6000688E29 /* MonsterData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC45DCC1E838F6000688E29 /* MonsterData+CoreDataProperties.swift */; };
+		ABC45DD31E83900D00688E29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC45DD21E83900D00688E29 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		ABC45DBD1E83788F00688E29 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		ABC45DBF1E8380C900688E29 /* MonsterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterCell.swift; sourceTree = "<group>"; };
 		ABC45DC11E83819900688E29 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ABC45DC71E838B0300688E29 /* MonstersModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MonstersModel.xcdatamodel; sourceTree = "<group>"; };
+		ABC45DC91E838F6000688E29 /* Monster+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monster+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ABC45DCA1E838F6000688E29 /* Monster+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monster+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ABC45DCB1E838F6000688E29 /* MonsterData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MonsterData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ABC45DCC1E838F6000688E29 /* MonsterData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MonsterData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ABC45DD21E83900D00688E29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC45DD31E83900D00688E29 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,7 @@
 				279CEC291E77743300300F27 /* Darwins Monster EncyclopaediaTests */,
 				279CEC341E77743300300F27 /* Darwins Monster EncyclopaediaUITests */,
 				279CEC131E77743300300F27 /* Products */,
+				ABC45DD11E83900C00688E29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +119,11 @@
 		279CEC141E77743300300F27 /* Darwins Monster Encyclopaedia */ = {
 			isa = PBXGroup;
 			children = (
+				ABC45DC91E838F6000688E29 /* Monster+CoreDataClass.swift */,
+				ABC45DCA1E838F6000688E29 /* Monster+CoreDataProperties.swift */,
+				ABC45DCB1E838F6000688E29 /* MonsterData+CoreDataClass.swift */,
+				ABC45DCC1E838F6000688E29 /* MonsterData+CoreDataProperties.swift */,
+				ABC45DC61E838B0300688E29 /* MonstersModel.xcdatamodeld */,
 				279CEC151E77743300300F27 /* AppDelegate.swift */,
 				279CEC171E77743300300F27 /* ViewController.swift */,
 				279CEC191E77743300300F27 /* Main.storyboard */,
@@ -135,6 +154,14 @@
 				279CEC371E77743300300F27 /* Info.plist */,
 			);
 			path = "Darwins Monster EncyclopaediaUITests";
+			sourceTree = "<group>";
+		};
+		ABC45DD11E83900C00688E29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABC45DD21E83900D00688E29 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,11 +298,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC45DCF1E838F6000688E29 /* MonsterData+CoreDataClass.swift in Sources */,
 				ABC45DC21E83819900688E29 /* SearchViewController.swift in Sources */,
 				279CEC181E77743300300F27 /* ViewController.swift in Sources */,
+				ABC45DCE1E838F6000688E29 /* Monster+CoreDataProperties.swift in Sources */,
+				ABC45DCD1E838F6000688E29 /* Monster+CoreDataClass.swift in Sources */,
 				279CEC441E77768300300F27 /* Monster.swift in Sources */,
 				279CEC161E77743300300F27 /* AppDelegate.swift in Sources */,
+				ABC45DD01E838F6000688E29 /* MonsterData+CoreDataProperties.swift in Sources */,
 				ABC45DC01E8380C900688E29 /* MonsterCell.swift in Sources */,
+				ABC45DC81E838B0300688E29 /* MonstersModel.xcdatamodeld in Sources */,
 				ABC45DBE1E83788F00688E29 /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +572,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ABC45DC61E838B0300688E29 /* MonstersModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABC45DC71E838B0300688E29 /* MonstersModel.xcdatamodel */,
+			);
+			currentVersion = ABC45DC71E838B0300688E29 /* MonstersModel.xcdatamodel */;
+			path = MonstersModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 279CEC0A1E77743200300F27 /* Project object */;
 }
