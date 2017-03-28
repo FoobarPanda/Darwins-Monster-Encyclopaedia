@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var actionMessage: UILabel!
     
-    var currentMonster: Monster?
+    //var currentMonster: Monster?
     
     @IBAction func saveButton(){
         
